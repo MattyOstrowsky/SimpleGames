@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>322</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>90</y>
+      <width>160</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>90</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="invertedControls">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>60</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>kąt[stopnie]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>140</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>prędkość[m/s]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>240</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>odległość przedmiotu [m]</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>270</y>
+      <width>62</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>370</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sprawdź</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>410</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>170</y>
+      <width>62</width>
+      <height>26</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
