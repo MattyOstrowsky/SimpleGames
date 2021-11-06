@@ -1,7 +1,10 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from main import *
 import sys
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+from main import *
+
 
 class FirstApp(Ui_MainWindow):
     def __init__(self, window):
@@ -34,7 +37,7 @@ class FirstApp(Ui_MainWindow):
         yy.append(x0 + vy * t_max - (g * t_max * t_max) / 2)
         xx.append(x0 + vx * t_max)
 
-        if self.doubleSpinBox.value() == xx[len(xx)-1]:
+        if self.doubleSpinBox.value() == xx[len(xx) - 1]:
             self.label_5.setText("udało się!!")
         else:
             self.label_5.setText("Nie udało się!!")
@@ -43,7 +46,7 @@ class FirstApp(Ui_MainWindow):
         yt = 0
 
         if xt > z:
-            z = xt + 0.1*xt
+            z = xt + 0.1 * xt
         else:
             pass
 
@@ -51,7 +54,6 @@ class FirstApp(Ui_MainWindow):
         plt.plot(xt, yt, 'o-')
         plt.axis([0, z, 0, h])
         plt.show()
-
 
 
 app = QtWidgets.QApplication(sys.argv)
